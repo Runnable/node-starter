@@ -8,6 +8,7 @@ RUN npm install
 # Add Application Files
 ADD . /app/
 EXPOSE 3000
+RUN FAIL
 
 # Run Application
 CMD npm start
