@@ -4,6 +4,10 @@ services:
     image: mongo
     ports:
       - "27017:27017"
+  2ndDb:
+    image: mongo
+    ports:
+      - "27017:27017"
   web:
     build: .
     ports:
