@@ -4,7 +4,7 @@ services:
     image: mongo
     ports:
       - "27017:27017"
-  2ndDb:
+  dbNumber2:
     image: mongo
     ports:
       - "27017:27017"
