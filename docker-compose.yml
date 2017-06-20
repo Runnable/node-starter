@@ -12,3 +12,11 @@ services:
       - "db"
     environment:
       - MONGODB_HOST=db
+  web2:
+    build: .
+    ports:
+      - "3000:3000"
+    links:
+      - "db"
+    environment:
+      - MONGODB_HOST=db
