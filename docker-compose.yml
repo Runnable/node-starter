@@ -4,10 +4,6 @@ services:
     image: mongo
     ports:
       - "27017:27017"
-  dbNumber2:
-    image: mongo
-    ports:
-      - "27017:27017"
   dbNumber3:
     image: mongo
     ports:
