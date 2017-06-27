@@ -1,0 +1,30 @@
+version: '2'
+services:
+  db:
+    image: mongo
+    ports:
+      - "27017:27017"
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    links:
+      - "db"
+    environment:
+      - MONGODB_HOST=db
+  web2:
+    build: .
+    ports:
+      - "3000:3000"
+    links:
+      - "db"
+    environment:
+      - MONGODB_HOST=db
+  api:
+    build: git@github.com/Runnable/node-starter.git
+    ports:
+      - "7890:7890"
+  api2:
+    build: git@github.com/Runnable/node-starter.git
+    ports:
+      - "7890:7890"
