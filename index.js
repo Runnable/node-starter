@@ -34,6 +34,8 @@ app.listen(port, () => {
   console.log('Application running at: ' + hostName)
 })
 
+// Test commit
+
 app.use(bodyParser.json())
 app.use(logErrors)
 app.use(errorHandler)
